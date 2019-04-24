@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:VZRResponse xmlns:ns2="http://www.ibm.com/rules/decisionservice/VZRNEWApp/VZR"
+    xmlns:ns3="http://www.ibm.com/rules/decisionservice/VZRNEWApp/VZR/param">
+    <ns2:DecisionID>3c286ac5-ff55-4fcc-8cbc-c037126fcf770</ns2:DecisionID>
+    <ns3:calcResult>
+        <calcResult>
+            <territory>Т-VIII</territory>
+            <success>true</success>
+        </calcResult>
+    </ns3:calcResult>
+    <ns3:currencyEntry>
+        <currencyEntry>
+            <currencyList>
+                <name>USD</name>
+                <ID>USD</ID>
+                <siteName>USD</siteName>
+            </currencyList>
+            <currencyList>
+                <name>EUR</name>
+                <ID>EUR</ID>
+                <siteName>EUR</siteName>
+            </currencyList>
+        </currencyEntry>
+    </ns3:currencyEntry>
+    <ns3:packageList>
+        <packageList>
+            <packageList>
+                <packgeName>Weekend</packgeName>
+                <riskEntry>
+                    <riskID>1</riskID>
+                    <riskName>Пропущенное мероприятие</riskName>
+                    <siteName>Пропущенное мероприятие</siteName>
+                    <riskDescription>Пропущенное мероприятие</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>1500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>2</riskID>
+                    <riskName>Задержка рейса (max limit) более 4-х часов</riskName>
+                    <siteName>Задержка рейса (max limit) более 4-х часов</siteName>
+                    <riskDescription>Задержка рейса (max limit) более 4-х часов</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>350.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3</riskID>
+                    <riskName>Отмена рейса после 4-х часов</riskName>
+                    <siteName>Отмена рейса после 4-х часов</siteName>
+                    <riskDescription>Отмена рейса после 4-х часов</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>4</riskID>
+                    <riskName>Вынужденный отказ от посадки более 4-х часов</riskName>
+                    <siteName>Вынужденный отказ от посадки более 4-х часов</siteName>
+                    <riskDescription>Вынужденный отказ от посадки более 4-х часов</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>100.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>5</riskID>
+                    <riskName>Вынужденный отказ от посадки более 12-ти часов</riskName>
+                    <siteName>Вынужденный отказ от посадки более 12-ти часов</siteName>
+                    <riskDescription>Вынужденный отказ от посадки более 12-ти
+                        часов</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <name>Пакет Выходной</name>
+                <id>6645856</id>
+                <siteName>Weekend</siteName>
+                <description>Защита в случае отмены или задержки рейса, а также пропущенного
+                    мероприятия. Гарантировано!</description>
+                <marketingDescription>Защита в случае отмены или задержки рейса, а также
+                    пропущенного мероприятия. Гарантировано!</marketingDescription>
+                <hint>Компенсация в случае пропущенного мероприятия, задержки, отмены, отказа рейса,
+                    в том числе стыковочного рейса.</hint>
+                <packagePremium>3.08</packagePremium>
+                <packagePremiumWithoutPromo>3.08</packagePremiumWithoutPromo>
+                <selected>false</selected>
+                <show>true</show>
+                <sortOrder>3</sortOrder>
+            </packageList>
+            <packageList>
+                <packgeName>MoneyProtect</packgeName>
+                <riskEntry>
+                    <riskID>1</riskID>
+                    <riskName>Личные денежные средства</riskName>
+                    <siteName>Личные денежные средства</siteName>
+                    <riskDescription>Личные денежные средства</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>250.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>2</riskID>
+                    <riskName>Паспорт</riskName>
+                    <siteName>Паспорт</siteName>
+                    <riskDescription>Паспорт</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3</riskID>
+                    <riskName>Кража денег, снятых с банкомата (max limit в год)</riskName>
+                    <siteName>Кража денег, снятых с банкомата (max limit в год)</siteName>
+                    <riskDescription>Кража денег, снятых с банкомата (max limit в
+                        год)</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>600.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>4</riskID>
+                    <riskName>Страхование приобретённого имущества</riskName>
+                    <siteName>Страхование приобретённого имущества</siteName>
+                    <riskDescription>Страхование приобретённого имущества</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>3000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>5</riskID>
+                    <riskName>Гарантия возврата покупки (max limit в год)</riskName>
+                    <siteName>Гарантия возврата покупки (max limit в год)</siteName>
+                    <riskDescription>Гарантия возврата покупки (max limit в год)</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>6</riskID>
+                    <riskName>Продлённая гарантия покупок приобретенных в путешествие</riskName>
+                    <siteName>Продлённая гарантия покупок приобретенных в путешествие</siteName>
+                    <riskDescription>Продлённая гарантия покупок приобретенных в
+                        путешествие</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>3000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>7</riskID>
+                    <riskName>Личное имущество (ручная кладь, кошелек, портфель)</riskName>
+                    <siteName>Личное имущество (ручная кладь, кошелек, портфель)</siteName>
+                    <riskDescription>Личное имущество (ручная кладь, кошелек,
+                        портфель)</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID/>
+                    <riskName>Страхование ключей</riskName>
+                    <siteName>Страхование ключей</siteName>
+                    <riskDescription>Страхование ключей</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>200.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <name>Пакет Личное имущество</name>
+                <id>6645857</id>
+                <siteName>MoneyProtect</siteName>
+                <description>Потеряли ключи или паспорт, мошенники сняли все деньги с карты? Экстра
+                    защита ваших финансов и личных вещей во время путешествий.</description>
+                <marketingDescription>Потеряли ключи или паспорт, мошенники сняли все деньги с
+                    карты? Экстра защита ваших финансов и личных вещей во время
+                    путешествий.</marketingDescription>
+                <hint>Компенсация в случае утери денежных средств и паспорта, личного и
+                    приобретенного имущества, а также гарантия на возврат покупки.</hint>
+                <packagePremium>3.6</packagePremium>
+                <packagePremiumWithoutPromo>3.6</packagePremiumWithoutPromo>
+                <selected>false</selected>
+                <show>true</show>
+                <sortOrder>4</sortOrder>
+            </packageList>
+            <packageList>
+                <packgeName>Allinclusive</packgeName>
+                <riskEntry>
+                    <riskID>1</riskID>
+                    <riskName>Личные денежные средства</riskName>
+                    <siteName>Личные денежные средства</siteName>
+                    <riskDescription>Личные денежные средства</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>250.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>2</riskID>
+                    <riskName>Паспорт: потеря или кража паспорта, удостоверения личности или визы.
+                        Бронирование и паспортные расходы</riskName>
+                    <siteName>Паспорт: потеря или кража паспорта, удостоверения личности или визы.
+                        Бронирование и паспортные расходы</siteName>
+                    <riskDescription>Паспорт: потеря или кража паспорта, удостоверения личности или
+                        визы. Бронирование и паспортные расходы</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>1000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3</riskID>
+                    <riskName>Кража денег, снятых с банкомата</riskName>
+                    <siteName>Кража денег, снятых с банкомата</siteName>
+                    <riskDescription>Кража денег, снятых с банкомата</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>300.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>4</riskID>
+                    <riskName>Страхование приобретённого имущества</riskName>
+                    <siteName>Страхование приобретённого имущества</siteName>
+                    <riskDescription>Страхование приобретённого имущества</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>5</riskID>
+                    <riskName>Гарантия возврата покупок</riskName>
+                    <siteName>Гарантия возврата покупок</siteName>
+                    <riskDescription>Гарантия возврата покупок</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>6</riskID>
+                    <riskName>Продлённая гарантия покупок приобретенных в путешествие</riskName>
+                    <siteName>Продлённая гарантия покупок приобретенных в путешествие</siteName>
+                    <riskDescription>Продлённая гарантия покупок приобретенных в
+                        путешествие</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>7</riskID>
+                    <riskName>Личное имущество (ручная кладь, кошелек, портфель)</riskName>
+                    <siteName>Личное имущество (ручная кладь, кошелек, портфель)</siteName>
+                    <riskDescription>Личное имущество (ручная кладь, кошелек,
+                        портфель)</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>1000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>8</riskID>
+                    <riskName>Страхование ключей</riskName>
+                    <siteName>Страхование ключей</siteName>
+                    <riskDescription>Страхование ключей</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>200.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>9</riskID>
+                    <riskName>Потеря банковской карты</riskName>
+                    <siteName>Потеря банковской карты</siteName>
+                    <riskDescription>Потеря банковской карты</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>10</riskID>
+                    <riskName>Покрытие рисков захвата и угона транспорта</riskName>
+                    <siteName>Покрытие рисков захвата и угона транспорта</siteName>
+                    <riskDescription>Покрытие рисков захвата и угона транспорта</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>5000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>11</riskID>
+                    <riskName>Зимний пакет</riskName>
+                    <siteName>Зимний пакет</siteName>
+                    <riskDescription>Зимний пакет</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>12</riskID>
+                    <riskName>Домашние животные: репатриация животного</riskName>
+                    <siteName>Домашние животные: репатриация животного</siteName>
+                    <riskDescription>Домашние животные: репатриация животного</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>1500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>13</riskID>
+                    <riskName>Домашние животные: расходы на содержание</riskName>
+                    <siteName>Домашние животные: расходы на содержание</siteName>
+                    <riskDescription>Домашние животные: расходы на содержание</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>1000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>14</riskID>
+                    <riskName>Покрытие франшизы при аренде автомобиля</riskName>
+                    <siteName>Покрытие франшизы при аренде автомобиля</siteName>
+                    <riskDescription>Покрытие франшизы при аренде автомобиля</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <name>Пакет Максимальный</name>
+                <id>6645858</id>
+                <siteName>Allinclusive</siteName>
+                <description>Максимально безопасные путешествия. В случае кражи денежных средств с
+                    карты или ее утери, захвата/угона автомобиля – защита Все
+                    Включено!</description>
+                <marketingDescription>Максимально безопасные путешествия. В случае кражи денежных
+                    средств с карты или ее утери, захвата/угона автомобиля – защита Все
+                    Включено!</marketingDescription>
+                <hint>Компенсация в случае утери денежных средств и паспорта, личного и
+                    приобретенного имущества, гарантия на возврат покупки, покрытие рисков захвата и
+                    угона транспорта, покрытие франшизы при аренде автомобиля, покрытие расходов,
+                    связанных с содержанием и репатриацией домашних животных.</hint>
+                <packagePremium>3.6</packagePremium>
+                <packagePremiumWithoutPromo>3.6</packagePremiumWithoutPromo>
+                <selected>false</selected>
+                <show>true</show>
+                <sortOrder>2</sortOrder>
+            </packageList>
+        </packageList>
+    </ns3:packageList>
+    <ns3:priceEntry>
+        <priceEntry>
+            <packgeName/>
+            <programEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>ПАКЕТ РИСКОВ ВЗР</riskName>
+                    <siteName>Медицинские расходы</siteName>
+                    <riskDescription>Экстренные медицинские услуги по амбулаторному и/или
+                        стационарному лечению.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>50000.0</value>
+                    </limitEntry>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>false</selected>
+                        <value>100000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>medtransport</riskName>
+                    <siteName>Медицинская транспортировка</siteName>
+                    <riskDescription>Транспортировка застрахованного в медицинское учреждение. При
+                        необходимости последующая транспортировка до места
+                        жительства.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>50000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>repatriation</riskName>
+                    <siteName>Репатриация в случае смерти</siteName>
+                    <riskDescription>Транспортировка тела на родину.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>10000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>dantist</riskName>
+                    <siteName>Экстренная стоматологическая помощь</siteName>
+                    <riskDescription>Услуги стоматологической помощи при острой зубной
+                        боли.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>200.0</value>
+                    </limitEntry>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>false</selected>
+                        <value>250.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>6-7</riskID>
+                    <riskName>transport</riskName>
+                    <siteName>Транспортные расходы</siteName>
+                    <riskDescription>Оплата расходов Застрахованного лица и находящихся с ним
+                        несовершеннолетних детей в страну постоянного места жительства в случае
+                        пропуска рейса по причине госпитализации застрахованного.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>connection</riskName>
+                    <siteName>Оплата срочных сообщений</siteName>
+                    <riskDescription>Оплата звонков, осуществленных для связи с Сервисной компанией
+                        или со Страховщиком с целью урегулирования страхового
+                        случая.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>100.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>additionalTransport</riskName>
+                    <siteName>Дополнительные транспортные расходы</siteName>
+                    <riskDescription>Оплата расходов, связанных с досрочным возвращением
+                        Застрахованного лица из поездки в случае смерти близкого родственника,
+                        а также расходов, связанных с задержкой регулярного
+                        авиарейса.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>documents</riskName>
+                    <siteName>Потеря и похищение документов</siteName>
+                    <riskDescription>Оплата расходов по поиску и оформлению дубликатов утерянных
+                        документов (паспорт с визой, билеты).</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>300.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>judje</riskName>
+                    <siteName>Юридическая помощь</siteName>
+                    <riskDescription>Оплата юридической консультации Застрахованного лица в случае
+                        его преследования в судебном порядке.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>5000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <name>Классик (С)</name>
+                <id>261</id>
+                <siteName>Классик (С)</siteName>
+                <description>Для оформления визы</description>
+                <discountPromocode>0.0</discountPromocode>
+                <loyaltyScore>18.0</loyaltyScore>
+                <maxLoyaltyScore>272.0</maxLoyaltyScore>
+                <programPremium>12.64</programPremium>
+                <programPremiumWithoutPromoCode>12.64</programPremiumWithoutPromoCode>
+                <recomended>true</recomended>
+            </programEntry>
+            <programEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>ПАКЕТ РИСКОВ ВЗР</riskName>
+                    <siteName>Медицинские расходы</siteName>
+                    <riskDescription>Экстренные медицинские услуги по амбулаторному и/или
+                        стационарному лечению.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>100000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>medtransport</riskName>
+                    <siteName>Медицинская транспортировка</siteName>
+                    <riskDescription>Транспортировка застрахованного в медицинское учреждение. При
+                        необходимости последующая транспортировка до места
+                        жительства.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>50000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>repatriation</riskName>
+                    <siteName>Репатриация в случае смерти</siteName>
+                    <riskDescription>Транспортировка тела на родину.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>10000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>dantist</riskName>
+                    <siteName>Экстренная стоматологическая помощь</siteName>
+                    <riskDescription>Услуги стоматологической помощи при острой зубной
+                        боли.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>250.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>6-7</riskID>
+                    <riskName>transport</riskName>
+                    <siteName>Транспортные расходы</siteName>
+                    <riskDescription>Оплата расходов Застрахованного лица и находящихся с ним
+                        несовершеннолетних детей в страну постоянного места жительства в случае
+                        пропуска рейса по причине госпитализации застрахованного.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>connection</riskName>
+                    <siteName>Оплата срочных сообщений</siteName>
+                    <riskDescription>Оплата звонков, осуществленных для связи с Сервисной компанией
+                        или со Страховщиком с целью урегулирования страхового
+                        случая.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>100.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>additionalTransport</riskName>
+                    <siteName>Дополнительные транспортные расходы</siteName>
+                    <riskDescription>Оплата расходов, связанных с досрочным возвращением
+                        Застрахованного лица из поездки в случае смерти близкого родственника,
+                        а также расходов, связанных с задержкой регулярного
+                        авиарейса.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>documents</riskName>
+                    <siteName>Потеря и похищение документов</siteName>
+                    <riskDescription>Оплата расходов по поиску и оформлению дубликатов утерянных
+                        документов (паспорт с визой, билеты).</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>300.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>judje</riskName>
+                    <siteName>Юридическая помощь</siteName>
+                    <riskDescription>Оплата юридической консультации Застрахованного лица в случае
+                        его преследования в судебном порядке.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>5000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209246</riskID>
+                    <riskName>harmauto</riskName>
+                    <siteName>Повреждение личного автотранспортного средства</siteName>
+                    <riskDescription>Буксировки в сервис. Транспортировка водителя и пассажиров
+                        до гостиницы в стране временного пребывания, а также в страну постоянного
+                        места жительства.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>2500.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209248</riskID>
+                    <riskName>ДОП. РИСК ВЗР (ГО)</riskName>
+                    <siteName>Ответственность перед третьими лицами</siteName>
+                    <riskDescription>Возмещение физического или имущественного ущерба, причиненного
+                        третьим лицам.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>50000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <riskEntry>
+                    <riskID>3209297</riskID>
+                    <riskName>ДОП. РИСК ВЗР (УТРАТА БАГАЖА)</riskName>
+                    <siteName>Страхование багажа</siteName>
+                    <riskDescription>Оплата стоимости утраченного багажа.</riskDescription>
+                    <limitEntry>
+                        <currencyID>EUR</currencyID>
+                        <discountPromocode>0.0</discountPromocode>
+                        <premium>0.0</premium>
+                        <premiumWithoutPromocode>0.0</premiumWithoutPromocode>
+                        <selected>true</selected>
+                        <value>1000.0</value>
+                    </limitEntry>
+                    <automaticalAdded>false</automaticalAdded>
+                    <optional>false</optional>
+                    <randomValue>0.0</randomValue>
+                    <recomended>false</recomended>
+                    <scoreRating>0.0</scoreRating>
+                </riskEntry>
+                <name>Премиум (Е)</name>
+                <id>321</id>
+                <siteName>Премиум (Е)</siteName>
+                <description>Всё включено</description>
+                <discountPromocode>0.0</discountPromocode>
+                <loyaltyScore>28.0</loyaltyScore>
+                <maxLoyaltyScore>427.0</maxLoyaltyScore>
+                <programPremium>19.84</programPremium>
+                <programPremiumWithoutPromoCode>19.84</programPremiumWithoutPromoCode>
+                <recomended>false</recomended>
+            </programEntry>
+            <totalDiscountPromocode>0.0</totalDiscountPromocode>
+            <totalPremium>19.84</totalPremium>
+            <totalPremiumWithoutPromoCode>0.0</totalPremiumWithoutPromoCode>
+        </priceEntry>
+    </ns3:priceEntry>
+    <ns3:reference>
+        <reference>
+            <referenceType/>
+            <sportList>
+                <sportName/>
+                <sportID/>
+                <sportNameForSite/>
+                <popularity>false</popularity>
+            </sportList>
+            <countryList>
+                <countryName/>
+                <countryID/>
+                <countryNameForPrint/>
+                <countryNameForSite/>
+                <comment/>
+                <popularity>false</popularity>
+                <shengen>false</shengen>
+            </countryList>
+            <insSumList>0.0</insSumList>
+        </reference>
+    </ns3:reference>
+</ns2:VZRResponse>
