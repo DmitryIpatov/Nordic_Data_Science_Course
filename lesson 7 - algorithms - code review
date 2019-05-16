@@ -1,0 +1,30 @@
+# множитель прогрессии
+def get_multiplier(lst):
+    return lst[1]/lst[0]
+
+# Сумма геометрической прогрессии
+def get_progression_sum(lst, multiplier):
+    q = multiplier
+    result = (lst[0] * (1 - q**len(lst)))/(1 - q)
+    return result
+    
+
+def is_progression(lst):
+    progression_sum = 0
+    if 0 in lst:
+        #print ('found zero')
+        result = 'NO'
+    else:
+        multiplier = get_multiplier(lst)
+        if multiplier == 1:
+            result = None
+        
+        for i in range(len(lst) - 1): #борьба с index out of range
+                if multiplier != lst[i+1]/lst[i]:
+                    result = 'NO'
+                    break
+                else:
+                    x = get_progression_sum(lst, multiplier)
+                    if x is not None:
+                        result = 'SUM = ' + str(x)
+    return result
