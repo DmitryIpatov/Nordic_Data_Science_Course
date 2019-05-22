@@ -1,0 +1,108 @@
+class BankProduct:
+    def __init__(self, term, name, surname, summa, percent):
+        self.term = term
+        self.name = name
+        self.surname = surname
+        self.summa = summa
+        self.percent = percent
+        
+    def __str__(self):   
+        return 'Client: {} {}, Term: {}, Sum: {}, Percent: {}'.format(
+            self.name, self.surname, self.term, self.summa, self.percent)
+
+class Credit(BankProduct):
+    type = 'Credit'
+    def __init__(self, term, name, surname, summa, percent, 
+                 min_early_repayment_sum, max_delay_term_days, late_fees):
+        super().__init__(term, name, surname, summa, percent)
+        self.min_early_repayment_sum = min_early_repayment_sum
+        self.max_delay_term_days = max_delay_term_days
+        self.late_fees = late_fees
+
+class Deposit(BankProduct):
+    type = 'Deposit'
+    def __init__(self, term, name, surname, summa, percent, 
+                 can_add_account, can_partial_withdraw, min_date_close_account):
+        super().__init__(term, name, surname, summa, percent)
+        self.can_add_account = can_add_account
+        self.can_partial_withdraw = can_partial_withdraw
+        self.min_date_close_account = min_date_close_account
+       
+       
+cr1 = Credit(12, 'ivan', 'ivanov', 500_000, 12, 250000, 10, 0.01)
+cr2 = Credit(24, 'petr', 'gusev', 1_500_000, 15.5, 100000, 10, 0.01)
+cr3 = Credit(36, 'oleg', 'pavlov', 200_000, 12.99, 250000, 10, 0.01)
+
+dep1 = Deposit(12, 'anna', 'ivanova', 300_000, 6, True, True, '2019-08-01')
+dep2 = Deposit(15, 'olga', 'volkova', 4_000_000, 5.6, 100000, 10, '2019-12-01')
+dep3 = Deposit(18, 'anna', 'zaytseva', 700_000, 4.5, 250000, 10, '2020-03-31')
+
+
+def product_sum(*products):
+    summa = 0
+    for product in products:
+        summa += product.summa
+    return summa
+    
+    
+print(product_sum(cr1, cr2, cr3))
+
+
+class Credit(BankProduct):
+    type = 'Credit'
+    def __init__(self, term, name, surname, summa, percent, 
+                 min_early_repayment_sum, max_delay_term_days, late_fees):
+        super().__init__(term, name, surname, summa, percent)
+        self.min_early_repayment_sum = min_early_repayment_sum
+        self.max_delay_term_days = max_delay_term_days
+        self.late_fees = late_fees
+    
+    # Процентная ставка по кредиту в месяц
+    def __get_monthly_percent(self, year_percent):       
+        return (year_percent/12/100)
+
+    # Коэффициент аннуитета
+    def __get_annuity_coeff(self, term_months, year_percent):
+        mp = self.__get_monthly_percent(year_percent)       
+        return (mp * (1 + mp)**term_months) / ((1 + mp)**term_months - 1)
+       
+    # Ежемесячный аннуитетный платеж 
+    def __get_monthly_payment(self, summa, annuity_coeff):
+        return annuity_coeff * summa       
+        
+    # 1. подсчет финальной суммы, которую выплатит заемщик (в случае кредита)
+    def calc_total_summa(self):
+        summa = self.summa
+        term_months = self.term
+        year_percent = self.percent       
+        return 'Общая сумма кредита: ' + str(
+            self.__get_monthly_payment(summa, self.__get_annuity_coeff(term_months, year_percent)) * term_months
+        )
+        
+ cr1 = Credit(36, 'ivan', 'ivanov', 1_000_000, 20, 250000, 10, 0.01)
+ 
+ cr1.calc_total_summa()
+ 
+ 
+ class Deposit(BankProduct):
+    type = 'Deposit'
+    def __init__(self, term, name, surname, summa, percent, 
+                 can_add_account, can_partial_withdraw, min_date_close_account):
+        super().__init__(term, name, surname, summa, percent)
+        self.can_add_account = can_add_account
+        self.can_partial_withdraw = can_partial_withdraw
+        self.min_date_close_account = min_date_close_account
+     
+    def calc_total_summa(self):
+        summa = self.summa
+        year_percent = self.percent
+        term_months = self.term
+        return 'Общая сумма депозита: ' + str(
+            summa * (1 + (year_percent/100/12))**term_months 
+        )
+
+
+dep5 = Deposit(12, 'anna', 'ivanova', 100000, 5, True, True, '2019-08-01')
+
+print (dep5.calc_total_summa())
+print(product_sum(dep1, dep2, dep3))
