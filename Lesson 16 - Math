@@ -1,0 +1,74 @@
+мат ожидание
+# мат ожидание - это некое усреднение 
+0.5*15 - 10*0.5
+пример: лотерея выигрыш 15 рублей, проигрыш 10 рублей
+то есть лотерея невыгодна, так как мат ожидание 2,5
+2.5
+0.5*25 + (-10*0.50)
+7.5
+результат будет -45р
+# мат ожидание - то есть если бесконечно играть в лотерею результат будет -45р
+0.00001*500000 - 50*0.99999
+-44.999500000000005
+1000/1500
+0.6666666666666666
+ь
+# распределение бернулли - когда только 2 события. Подключил/ не подключил роуминг
+Дисперсия
+0.7*(0-0.43)**2 + 0.2*(1-0.43)**2 + 0.07*(2-0.43)**2 + 0.03*(3-0.43)**2
+0.7*(0-0.43)**2 + 0.2*(1-0.43)**2 + 0.07*(2-0.43)**2 + 0.03*(3-0.43)**2
+0.5651
+9
+0.7*(0-0.48)**2 + 0.2*(1-0.48)**2 + 0.09*(2-0.48)**2 + 0.01*(3-0.48)**2
+0.4868
+Распределение
+# показывает, что вероятность меньше или равно такому-то значению
+# вероятность 0,5 175 см - слева люди меньшего роста с вероятностью 50%
+# вероятность 0,9 200 см - слева люди меньшего роста с вероятностью 90%
+остью
+Равномерное распределение - любое число сгенерится в равной вероятностью
+Нормальное распределение
+​
+ inline
+from scipy import stats
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+stats.uniform(0, 1).rvs()
+stats.uniform(0, 1).rvs()
+0.704366317180745
+stats.uniform(0, 100).rvs(size=3)
+stats.uniform(0, 100).rvs(size=3)
+array([76.86278499, 73.15808205, 74.57836802])
+sns.distplot(stats.uniform(0, 1).rvs(size=100000), kde=True)
+sns.distplot(stats.uniform(0, 1).rvs(size=100000), kde=True)
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
+<matplotlib.axes._subplots.AxesSubplot at 0x28f8abac4a8>
+
+stats.norm(0, 1).rvs()
+stats.norm(0, 1).rvs()
+0.26497827062554796
+stats.norm(0, 1).rvs(size=3) # числа будут около 0 (это матожидание), разброс 1
+stats.norm(0, 1).rvs(size=3) # числа будут около 0 (это матожидание), разброс 1
+array([-0.37662822,  1.29820759,  0.72617619])
+ие
+stats.norm(10, 2).rvs(size=3) # числа будут около 10 (это матожидание), разброс(стандартное отклонение) 2
+array([ 9.46132791,  7.9785221 , 12.21024348])
+sns.distplot(stats.norm(0, 1).rvs(size=100000), kde=True)
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
+<matplotlib.axes._subplots.AxesSubplot at 0x28f8ac6f160>
+
+import numpy as np
+import numpy as np
+np.mean(stats.norm(0, 1).rvs(size=100000)) # оценка мат ожидания
+0.0011324906784825586
+ще
+# стандартное отклонение - насколько отклоняется от среднего
+​
+# медиана - более устойчивая к выбросам метрика!!
+​
+# квантиль - 0,95 квантиль = 192см - то есть 95% людей меньше 192 см ростом
+​
+# перцентиль - это квантиль * 100. Так проще
